@@ -1,13 +1,281 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+/*=============================================
+=            Base Styles            =
+=============================================*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Montserrat&family=Marck+Script&display=swap');
+
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  min-height: 100vh;
 }
+
+p {
+  font-size: 1.25em;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+img.rounded {
+  border-radius: 8px;
+}
+
+h2 {
+  padding: 10px;
+}
+
+.headline {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5em;
+}
+
+.headline-2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+main h2, main h3, main p, button {
+  font-family: 'Raleway', sans-serif;
+}
+
+main p {
+  line-height: 1.5em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+}
+
+button {
+  border-radius: 16px;
+  padding: 5px 10px;
+  border: 1px solid;
+
+}
+
+/*=============================================
+=            Flex Container/Items - General            =
+=============================================*/
+.container {
+  width: 100%;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.item {
+  flex: 1;
+  /* flex-grow: 1; */
+  /* flex-basis: 20%; */
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+
+
+
+/*=============================================
+=            Section Specific Styles            =
+=============================================*/
+
+header, footer {
+  background-color: #6b655b;
+  /* background-color: #0B1C51; */
+}
+
+/*----------  Header  ----------*/
+header {
+  margin-bottom: 40px;
+  display: block;
+
+}
+
+header h1 {
+  font-size: 3em;
+  font-family: 'Marck Script', cursive;
+  padding: 20px 0;
+  text-align: center;
+  margin: 0;
+}
+
+header h1, nav a {
+  color: #eff0e5;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  padding-left: 0;
+}
+
+nav ul li a {
+  margin-right: 20px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav ul li:last-child a {
+  margin-right: 0px;
+}
+
+
+/*----------  Articles  ----------*/
+#intro, #projects, #contact {
+  margin-bottom: 120px;
+}
+
+#intro .group {
+  justify-content: space-around;
+}
+
+#about, #services {
+  background-color: #c5c0b8;
+  padding: 20px 0 30px 0;
+  margin: 120px 0;
+}
+
+/*----------  Intro  ----------*/
+#intro img {
+  border-radius: 50%;
+  max-width: 100vw;
+  width: 80vw;
+}
+
+
+
+/*----------  Contact Form  ----------*/
+fieldset {
+  padding: 10px 12px;
+  margin: 10px 0 20px 0;
+  border-radius: 6px;
+}
+
+legend {
+  padding: 3px 6px;
+  background-color: grey;
+  color: white;
+  border-radius: 8px;
+}
+
+form label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: gray;
+  font-family: arial;
+}
+
+form input[type=text], form input[type=email] {
+  color: #000000;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+form input, form textarea {
+  width: 100%;
+}
+
+form textarea {
+  height: 4.75rem;
+  color: #000000;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+form button {
+  display: block;
+}
+
+/*----------  Footer  ----------*/
+#footer {
+  padding: 20px 0 30px 0;
+  margin: 120px 0 0 0;
+}
+
+.footer-group {
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-group a {
+  padding: 1em;
+  color: white;
+  text-decoration: none;
+  flex-direction: column;
+}
+
+.footer-group .fa {
+  font-size: 2em;
+  color: whitesmoke;
+  /* margin-bottom: 1em; */
+}
+
+#footer div.copyright {
+  text-align: center;
+}
+
+/*=============================================
+=            Media Queries            =
+=============================================*/
+@media all and (min-width: 769px){
+  .container{
+    width: 80%;
+    margin: auto;
+  }
+  .group {
+    flex-direction: row;
+  }
+
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+  }
+
+  header h1 {
+    margin: 14px 0;
+    padding: 0;
+  }
+
+  nav a:hover, 
+  .footer-group a:hover {
+    border-radius: 8px;
+    background-color: cornflowerblue;
+    transition: background-color .5s;
+  }
+
+  button:hover {
+    background-color: darkgrey;
+    transition: background-color .5s;
+  }
+
+  #intro img {
+    max-width: 400px;
+
+  }
+
+}
+
+
