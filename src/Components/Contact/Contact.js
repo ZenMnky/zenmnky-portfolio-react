@@ -9,14 +9,14 @@ const Contact = () => {
                     <form action="https://formspree.io/f/mknpjjoz" method="POST">
                         <fieldset>
                             <legend>Send me an email</legend>
-                            <label for="contact-sender_name">Name</label>
+                            <label htmlFor="contact-sender_name">Name</label>
                             <input name="sender_name" id="contact-sender_name" type="text" 
                                 required />
         
-                            <label for="contact-reply_email">Email</label>
+                            <label htmlFor="contact-reply_email">Email</label>
                             <input name="reply_email" id="contact-reply_email" type="email" required />
 
-                            <label for="contact-message">Message</label>
+                            <label htmlFor="contact-message">Message</label>
                             <textarea name="message" id="contact-message" 
                                 placeholder="Let's build something beautiful together..." required></textarea>
 
