@@ -1,6 +1,6 @@
 // source attribution: https://www.youtube.com/watch?v=87wfMZ56egU
 
-export default (element, defaultHeight) => {
+ const setInputHeight = (element, defaultHeight) => {
     if(element) {
         // supports passing an event and a raw element via React ref
         const target = element.target ? element.target : element;
@@ -8,3 +8,5 @@ export default (element, defaultHeight) => {
         target.style.height = `${target.scrollHeight}px`;
     };
 };
+
+export default setInputHeight;

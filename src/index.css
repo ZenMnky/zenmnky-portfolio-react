@@ -275,32 +275,43 @@ form button {
   display: block;
 }
 
-/*----------  Footer  ----------*/
-/* footer {
-  background-color: #bcbccc;
-} */
-
-#footer {
-  padding: 20px 0 30px 0;
-  margin: 120px 0 0 0;
+.headshot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.footer-group {
+.headshot img {
+  margin-bottom: 10px;
+}
+
+
+/*----------  Contact Icons  ----------*/
+.contact-icon-group {
   justify-content: center;
   text-align: center;
 }
 
-.footer-group a {
+.contact-icon-group a {
   padding: 1em;
   color: white;
   text-decoration: none;
   flex-direction: column;
 }
 
-.footer-group .fa {
+.contact-icon-group .fa {
   font-size: 2em;
   color: whitesmoke;
   /* margin-bottom: 1em; */
+}
+
+
+/*----------  Footer  ----------*/
+
+#footer {
+  padding: 20px 0 30px 0;
+  margin: 120px 0 0 0;
 }
 
 #footer div.copyright {
@@ -332,7 +343,7 @@ form button {
   }
 
   nav a:hover, 
-  .footer-group a:hover {
+  .contact-icon-group a:hover {
     border-radius: 8px;
     background-color: cornflowerblue;
     transition: background-color .5s;
