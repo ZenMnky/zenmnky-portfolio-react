@@ -254,6 +254,12 @@ form input, form textarea {
   line-height: 1.5;
 }
 
+form textarea {
+  min-height: 100px;
+  overflow: hidden;
+  resize: none;
+}
+
 form input:focus, form textarea:focus {
   background-color: whitesmoke;
 }

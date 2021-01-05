@@ -1,4 +1,5 @@
 import React from 'react';
+import setInputHeight from '../../services/setInputHeight';
 
 const Contact = () => {
     return(
@@ -17,8 +18,13 @@ const Contact = () => {
                             <input name="reply_email" id="contact-reply_email" type="email" required />
 
                             <label htmlFor="contact-message">Message</label>
-                            <textarea name="message" id="contact-message" 
-                                placeholder="Let's build something beautiful together..." required></textarea>
+                            <textarea 
+                                name="message" 
+                                id="contact-message" 
+                                placeholder="Let's build something beautiful together..." 
+                                required 
+                                onChange={e => setInputHeight(e, '100px')}
+                            />
 
                             <button type="submit">Submit</button>
                         </fieldset>
