@@ -9,7 +9,7 @@ const store = {
             liveLink: 'https://mio-client.vercel.app/',
         },
         {
-            img: '',
+            img: 'https://i.ibb.co/fqmkb0N/artist-find-app-screenshot-artist-page.jpg',
             title: 'Artist Find',
             description: 'Music-artist search-app connected to Spotify API. Collaboratively built as an extracurricular project.',
             techStack: 'React, HTML5, CSS3',
