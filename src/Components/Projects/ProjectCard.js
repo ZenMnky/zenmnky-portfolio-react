@@ -6,6 +6,10 @@ class ProjectCard extends Component {
     render() { 
         let {img, title, description, techStack, repoLink, liveLink} = this.props;
 
+        if (img === null || img === '' || !img) {
+            img = 'https://i.ibb.co/nQrncMk/placeholder.png';
+        }
+
         return (
             <div className="item card" >
                 <img 
