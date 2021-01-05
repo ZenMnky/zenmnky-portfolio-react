@@ -7,7 +7,6 @@ const { projects } = store;
 
 class Projects extends Component {
     render(){
-        console.log('projects: ', projects)
         let projectContent = projects.map(project => <ProjectCard {...project} key={cuid()}/>)
 
         return(
