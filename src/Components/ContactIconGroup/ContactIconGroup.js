@@ -14,7 +14,7 @@ const ContactIconGroup = () => {
                 <FontAwesomeIcon icon={faGithub} className='fa'/>
             </a>
             
-            <a href='mailto:DeveloperJustinHager@Gmail.com'>
+            <a href='mailto:developer@justinhager.codes'>
                 <FontAwesomeIcon icon={faEnvelope} className='fa'/>
             </a>
         </div>
