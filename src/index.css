@@ -92,9 +92,10 @@ button:hover {
 }
 
 .item {
-  flex: 1;
+  flex: 1 500px;
   /* flex-grow: 1; */
   /* flex-basis: 20%; */
+  max-width: 900px;
   margin: 10px;
 }
 
