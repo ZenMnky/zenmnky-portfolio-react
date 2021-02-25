@@ -1,4 +1,5 @@
 import React from 'react';
+import JustinLexiAcroImg from '../../img/Justin-lexi-acro-art.png';
 
 const About = () => {
     return(
@@ -13,7 +14,7 @@ const About = () => {
                     </div>
                     <div className='item'>
                         <img 
-                            src='https://i.ibb.co/jyGTSGM/Acro-Yoga-mid-swing-lexi.png' 
+                            src={JustinLexiAcroImg} 
                             alt='acroyoga action shot' 
                             className='rounded' />
                     </div>
