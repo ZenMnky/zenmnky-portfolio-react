@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 
+
 class ProjectCard extends Component {
     
     render() { 
@@ -18,8 +19,11 @@ class ProjectCard extends Component {
                     className="rounded" 
                 />
                 <h2>{title}</h2>
+                <h3>The Gist:</h3>
                 <p>{description}</p>
-                <p>The Stack: {techStack}</p>
+                <h3>The Stack:</h3>
+                <p>{techStack}</p>
+                {/* <button>Project Details</button> */}
                 <a href={repoLink}><button>Repo</button></a>
                 <a href={liveLink}><button>Live Demo</button></a>
             </div>  
