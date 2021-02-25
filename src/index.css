@@ -44,6 +44,20 @@ h2 {
   padding: 10px;
 }
 
+.logo a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo a:hover {
+  cursor: pointer;
+}
+
 .sectionHeader {
   font-family: 'Raleway', sans-serif;
   color: white;
