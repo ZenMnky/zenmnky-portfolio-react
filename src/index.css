@@ -226,11 +226,16 @@ nav ul li:last-child a {
   border-radius: 10px;
   text-align: center;
   padding: 10px;
+  box-shadow: 5px 5px 10px black; 
 }
 
 
 
 /*----------  Contact Form  ----------*/
+fieldset {
+  box-shadow: 5px 5px 10px black; 
+}
+
 fieldset {
   padding: 10px 12px;
   margin: 10px 0 20px 0;
