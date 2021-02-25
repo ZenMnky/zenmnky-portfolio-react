@@ -23,7 +23,7 @@ const store = {
         {
             img: sraImg,
             title: 'Spaced Repetition',
-            description: 'Korean learning app, based on a linked list data structure.',
+            description: 'Korean language learning app, based on a linked list data structure.',
             techStack: 'React, PostgreSQL, Express, Node, HTML5, CSS3, JS ES6',
             repoLink: 'https://github.com/ZenMnky/spaced-repetition',
             liveLink: 'https://spaced-repetition-omega.vercel.app/',
