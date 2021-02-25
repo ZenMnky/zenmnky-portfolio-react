@@ -9,7 +9,7 @@ export default function MioDetails() {
                 <section className='project-details_intro item bluebox'>
                     <h2 className='sectionHeader'>Introduction</h2>
                     <div className='imgContainer'>
-                      <img src={mioImg} />
+                      <img src={mioImg} alt='mio app screenshot' />
                     </div>
                     <div className='project-details_description'>
                         <h3>Summary</h3>
