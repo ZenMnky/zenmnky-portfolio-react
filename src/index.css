@@ -78,6 +78,9 @@ button {
   padding: 5px 10px;
   border: 1px solid;
   margin: 10px;
+  width: 45%;
+  font-weight: 600;
+  font-size: 1.25em;
 }
 
 button:hover {
