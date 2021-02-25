@@ -11,7 +11,7 @@ class Projects extends Component {
 
         return(
             <article className="container" id="projects">
-                <h2>Projects</h2>
+                <h2 className='sectionHeader'>Projects</h2>
                 <div className="group">
                     {projectContent}
                 </div>

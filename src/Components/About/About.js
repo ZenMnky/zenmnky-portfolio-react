@@ -4,7 +4,7 @@ const About = () => {
     return(
         <article id='about'>
             <div className='about-container'>
-                <h2>About Me</h2>
+                <h2 className='sectionHeader'>About Me</h2>
                 <div className='group'>
                     <div className='item'>
                         <p>I specialize in designing and building solutions and processes from the ground up to support an organization’s objectives, managing solution lifecycles from conceptualization thru operationalization. Involved in web application development since December 2019, I bring creative solutions, organization, and collaboration.</p>

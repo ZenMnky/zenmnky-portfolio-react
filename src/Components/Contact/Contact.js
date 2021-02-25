@@ -4,7 +4,7 @@ import setInputHeight from '../../services/setInputHeight';
 const Contact = () => {
     return(
         <article className="container" id="contact">
-            <h2>Contact</h2>
+            <h2 className='sectionHeader'>Contact</h2>
             <div className="group">
                 <div className="item">
                     <form action="https://formspree.io/f/mknpjjoz" method="POST">
