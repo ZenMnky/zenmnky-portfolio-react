@@ -1,19 +1,26 @@
 import React, {Component} from 'react';
-import store from '../../store';
-import ProjectCard from './ProjectCard';
 import cuid from 'cuid';
-const { projects } = store;
+
+// import ProjectCard from './ProjectCard';
+// import store from '../../store';
+// const { projects } = store;
+
+import MioCard from '../ProjectCards/MioCard';
+import ArtistFindCard from '../ProjectCards/ArtistFindCard';
+import SpacedRepetitionCard from '../ProjectCards/SpacedRepetitionCard';
 
 
 class Projects extends Component {
     render(){
-        let projectContent = projects.map(project => <ProjectCard {...project} key={cuid()}/>)
+        // let projectContent = projects.map(project => <ProjectCard {...project} key={cuid()}/>)
 
         return(
             <article className="container" id="projects">
                 <h2 className='sectionHeader'>Projects</h2>
                 <div className="group">
-                    {projectContent}
+                    <MioCard key={cuid()}/>
+                    <ArtistFindCard key={cuid()} />
+                    <SpacedRepetitionCard key={cuid()} />
                 </div>
             </article>
         );

@@ -8,7 +8,7 @@ const store = {
             img: mioImg,
             title: 'Mio',
             description: 'Fullstack application designed to help users track and organize interpersonal relationships',
-            techStack: 'React, HTML5, CSS3, PostgreSQL, Express, Node',
+            techStack: 'React, PostgreSQL, Express, Node, HTML5, CSS3, JS ES6',
             repoLink: 'https://github.com/ZenMnky/mio-client',
             liveLink: 'https://mio-client.vercel.app/',
         },

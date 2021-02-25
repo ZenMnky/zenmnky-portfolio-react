@@ -1,23 +1,28 @@
-import './App.css';
+import React from 'react';
+import {Route, Switch} from 'react-router-dom';
 
 import Header from '../Components/Header/Header';
 import Footer from '../Components/Footer/Footer';
-import Intro from '../Components/Intro/Intro';
-import About from '../Components/About/About';
-import Projects from '../Components/Projects/Projects';
-import Contact from '../Components/Contact/Contact';
+import HomeView from '../Components/HomeView/HomeView';
+import PageNotFound from '../Components/PageNotFound/PageNotFound';
+
+import MioDetails from '../Components/MioDetails/MioDetails';
+
+import './App.css';
+
 
 function App() {
   return (
     <div className="App">
       <Header />
-        <Intro />
-        <About />
-        <Projects />
-        <Contact />
+        <Switch>
+          <Route exact path='/' component={HomeView} />
+          <Route path ='/details/mio' component={MioDetails} />
+          <Route component={PageNotFound} />
+        </Switch>
       <Footer />
     </div>
   );
-};
+}
 
 export default App;

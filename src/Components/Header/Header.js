@@ -1,7 +1,13 @@
+import {Link} from 'react-router-dom';
+
 const Header = () => {
     return(
         <header>
-            <h1 className="logo">Justin Hager</h1>
+            <h1 className="logo">
+                <Link to='/'>
+                    Justin Hager
+                </Link>
+            </h1>
     
             <nav className="nav">
                 <ul>
