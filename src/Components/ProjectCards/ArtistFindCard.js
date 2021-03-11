@@ -5,11 +5,14 @@ export default function ArtistFindCard() {
 
     return (
         <div className="item card" >
-                <img 
-                    src={img} 
-                    alt={`artist find screenshot`} 
-                    className="rounded" 
-                />
+                <a href='https://justin-jenna-music-app.vercel.app/'>
+                    <img 
+                        src={img} 
+                        alt={`artist find screenshot`} 
+                        className="rounded" 
+                    />
+                </a>
+                
                 <h2>Artist Find</h2>
 
                 <h3>The Gist:</h3>
