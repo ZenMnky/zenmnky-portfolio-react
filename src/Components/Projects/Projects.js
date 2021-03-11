@@ -8,6 +8,7 @@ import cuid from 'cuid';
 import MioCard from '../ProjectCards/MioCard';
 import ArtistFindCard from '../ProjectCards/ArtistFindCard';
 import SpacedRepetitionCard from '../ProjectCards/SpacedRepetitionCard';
+import AcroYogaFlowCard from '../ProjectCards/AcroYogaFlowCard';
 
 
 class Projects extends Component {
@@ -18,6 +19,7 @@ class Projects extends Component {
             <article className="container" id="projects">
                 <h2 className='sectionHeader'>Projects</h2>
                 <div className="group">
+                    <AcroYogaFlowCard key={cuid()} />
                     <MioCard key={cuid()}/>
                     <ArtistFindCard key={cuid()} />
                     <SpacedRepetitionCard key={cuid()} />

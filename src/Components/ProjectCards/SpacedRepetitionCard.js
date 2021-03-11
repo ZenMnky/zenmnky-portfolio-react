@@ -5,11 +5,13 @@ export default function SpacedRepetitionCard() {
 
     return (
         <div className="item card" >
-                <img 
-                    src={img} 
-                    alt={`spaced repetition screenshot`} 
-                    className="rounded" 
-                />
+                <a href='https://spaced-repetition-omega.vercel.app/'>
+                    <img 
+                        src={img} 
+                        alt={`spaced repetition screenshot`} 
+                        className="rounded" 
+                    />
+                </a>
                 <h2>Spaced Repetition</h2>
 
                 <h3>The Gist:</h3>
